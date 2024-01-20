@@ -12,8 +12,8 @@ form.addEventListener('input', () =>
   localStorage.setItem(
     localStorageKey,
     JSON.stringify({
-      email: email.value,
-      message: message.value,
+      email: email.trim().value,
+      message: message.trim().value,
     })
   )
 );
